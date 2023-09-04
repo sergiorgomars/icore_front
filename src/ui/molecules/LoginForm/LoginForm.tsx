@@ -1,21 +1,23 @@
 import * as styles from "./LoginForm.styles";
+
+import { Input } from "@atoms";
+
 export default function LoginForm() {
+
     return(
         <div className={styles.container}>
             <div className={styles.logo}>iCORE</div>
             <div className={styles.form}>
                 <h1 className={styles.form_title}>Ingresa a tu cuenta</h1>
-
-                <div className={styles.testdiv}>
-                    <span>SPAN</span>
-                    <input className={styles.form_input} type="email" placeholder="Correo electrónico"/>
+                <Input iconType="none" placeholder="Correo electrónico" type="text"/>
+                <Input iconType="eye" placeholder="Contraseña" type="password"/>
+                <a className={styles.text_forgot_pass}>¿Olvidaste tu contraseña?</a>
+                
+                <div className={styles.rememberme_container}>
+                    <span>Recuerdame</span>
+                    <input type="checkbox" />
                 </div>
-                <input className={styles.form_input} type="email" placeholder="Correo electrónico"/>
-                <input className={styles.form_input} type="password" placeholder="Contraseña"/>
-                {/* <span>¿Olvidaste tu contraseña?</span>
-                <span>Recuerdame</span>
-                <input type="checkbox" />
-                <button>Ingresar</button> */}
+                <button className={styles.button}>Ingresar</button>
             </div>
         </div>
     )

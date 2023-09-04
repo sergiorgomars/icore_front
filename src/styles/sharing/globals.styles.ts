@@ -19,6 +19,9 @@ injectGlobal`
     --blue-one: #146C94; 
 
     --gray-one: #636769;
+
+    --black: #000;
+    --white: #fff;
     
     /* FONTS */
     --principal-font: 'Manrope', sans-serif;

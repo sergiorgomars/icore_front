@@ -37,35 +37,31 @@ export const form_title = cx(
     `
 );
 
-
-export const testdiv = cx(
+export const text_forgot_pass = cx(
     css`
-        
-        & span {
-
-        }
+        width: 100%;
+        font-family: var(--principal-font);
+        color: var(--blue-one);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: left;
+        cursor: pointer;
     `
 );
 
-export const form_input = cx(
+export const rememberme_container = cx(
+    flex({justify: "space-between"}),
     css`
         width: 100%;
-        height: 56px;
-        padding: 0px 12px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 21.86px;
-        border: 1px solid var(--gray-one);
-        border-radius: 4px;
-        color: var(--gray-one);
-        font-family: var(--principal-font);
-        &::placeholder {
-            color: var(--gray-one);
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 21.86px;
-            font-family: var(--principal-font);
-        }
+    `
+);
 
+
+export const button = cx(
+    flex({justify: "space-between"}),
+    css`
+        width: 100%;
     `
 );
