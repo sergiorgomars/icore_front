@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+
+      /* Styles */
+      "@styles": ["./src/styles/index.ts"],
+      "@mixins": ["./src/styles/sharing/mixins.ts"],
+
+      /* UI */
+      "@atoms": ["./src/ui/atoms/index.ts"],
+      "@molecules": ["./src/ui/molecules/index.ts"],
+      "@organisms": ["./src/ui/organisms/index.ts"],
+
+      /*assets*/
+      "@images/*": ["./src/assets/images/*"],
+      "@icons/*": ["./src/assets/icons/*"],
+
+      /*Logic*/
+      "@data": ["./src/logic/data/index.ts"],
+      "@services": ["./src/logic/services/index.ts"],
+      "@utils": ["./src/logic/utils/index.ts"],
+
+      /*types*/
+      "@types": ["./src/types/index.ts"],
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
