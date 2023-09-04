@@ -1,5 +1,5 @@
 'use client';
-import { LoginStyles,  } from "@styles";
+import { LoginStyles } from "@styles";
 import backgroundImg from "@images/login/background.png";
 import { LoginForm } from "@molecules";
 type LoginProps = {};

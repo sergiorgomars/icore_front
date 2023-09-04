@@ -10,7 +10,8 @@ export const container = cx(
 export const left_section = cx(
     flex({justify: "space-between"}),
     css`
-        width: 496px;
+        width: 30%;
+        min-width: 496px;
         height: 100vh;
         padding: 0px 48px;
     `
